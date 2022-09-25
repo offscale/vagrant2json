@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from ast import parse
-from distutils.sysconfig import get_python_lib
-from functools import partial
 from operator import attrgetter, itemgetter
-from os import listdir, path
+from os import path
 from sys import version_info
 
-from setuptools import find_packages, setup
+from setuptools import setup
 
 if version_info[0] == 2:
     from itertools import ifilter as filter
